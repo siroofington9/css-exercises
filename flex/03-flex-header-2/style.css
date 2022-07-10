@@ -6,10 +6,17 @@ body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
+  width: 100%;
+  height: auto;
+  display: flex;
   background: white;
+  margin: 0px;
+  padding: 0px;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
 }
@@ -23,6 +30,11 @@ body {
 }
 
 .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  margin-left: 8px;
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
@@ -30,6 +42,8 @@ body {
 }
 
 button {
+  display: flex;
+  justify-content: flex-end;
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
@@ -44,5 +58,26 @@ a {
 }
 
 ul {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
   list-style-type: none;
 }
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.right {
+  display: flex;
+  margin-right: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  gap: 16px
+  
+}
+
